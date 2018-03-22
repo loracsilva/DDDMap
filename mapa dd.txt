@@ -1,0 +1,36 @@
+
+84          Rio grande do Norte         SELECT * FROM whats WHERE numero LIKE '%(84)%'
+83          Paraiba                     SELECT * FROM whats WHERE numero LIKE '%(83)%'
+82          Alagoas                     SELECT * FROM whats WHERE numero LIKE '%(82)%'
+79          Sergipe                     SELECT * FROM whats WHERE numero LIKE '%(79)%'
+63          Tocantins                   SELECT * FROM whats WHERE numero LIKE '%(63)%'
+96          Amapá                       SELECT * FROM whats WHERE numero LIKE '%(96)%'
+95          Roraima                     SELECT * FROM whats WHERE numero LIKE '%(95)%'
+68          Acre                        SELECT * FROM whats WHERE numero LIKE '%(68)%'
+69          Rondônia                    SELECT * FROM whats WHERE numero LIKE '%(69)%'
+67          Mato Grosso do Sul          SELECT * FROM whats WHERE numero LIKE '%(67)%'
+81, 87      Pernanbuco                  SELECT * FROM whats WHERE numero LIKE '%(81)%' OR numero LIKE '%(87)%'
+86, 89      Piaui                       SELECT * FROM whats WHERE numero LIKE '%(86)%' OR numero LIKE '%(89)%'
+85, 88      Ceara                       SELECT * FROM whats WHERE numero LIKE '%(85)%' OR numero LIKE '%(88)%'
+92, 97      Amazonas                    SELECT * FROM whats WHERE numero LIKE '%(92)%' OR numero LIKE '%(97)%'
+27, 28      Espirito Santo              SELECT * FROM whats WHERE numero LIKE '%(27)%' OR numero LIKE '%(28)%'
+65, 66      Mato Grosso                 SELECT * FROM whats WHERE numero LIKE '%(65)%' OR numero LIKE '%(67)%'
+98, 99      Maranhão                    SELECT * FROM whats WHERE numero LIKE '%(98)%' OR numero LIKE '%(99)%'
+91, 93, 94  Pará                        SELECT * FROM whats WHERE numero LIKE '%(91)%' OR numero LIKE '%(93)%' OR numero LIKE '%(94)%'
+21, 22, 24  Rio de Janeiro              SELECT * FROM whats WHERE numero LIKE '%(21)%' OR numero LIKE '%(22)%' OR numero LIKE '%(24)%'
+47, 48, 49  Santa Catarina              SELECT * FROM whats WHERE numero LIKE '%(47)%' OR numero LIKE '%(48)%' OR numero LIKE '%(49)%'
+61, 62, 64  DF,Goias                    SELECT * FROM whats WHERE numero LIKE '%(61)%' OR numero LIKE '%(62)%' OR numero LIKE '%(64)%'
+51, 53, 54, 55                          Rio Grande do Sul   SELECT * FROM whats WHERE numero LIKE '%(51)%' OR numero LIKE '%(53)%' OR numero LIKE '%(54)%' OR numero LIKE '%(55)%'
+71, 73, 74, 75, 77                      Bahia               SELECT * FROM whats WHERE numero LIKE '%(71)%' OR numero LIKE '%(73)%' OR numero LIKE '%(74)%' OR numero LIKE '%(75)%' OR numero LIKE '%(77)%'
+41, 42, 43, 44, 45, 46                  Paraná              SELECT * FROM whats WHERE numero LIKE '%(41)%' OR numero LIKE '%(42)%' OR numero LIKE '%(43)%' OR numero LIKE '%(44)%' OR numero LIKE '%(45)%' OR numero LIKE '%(46)%'
+31, 32, 33, 34, 35, 37, 38              Minas Gerais        SELECT * FROM whats WHERE numero LIKE '%(31)%' OR numero LIKE '%(32)%' OR numero LIKE '%(33)%' OR numero LIKE '%(34)%' OR numero LIKE '%(35)%' OR numero LIKE '%(37)%' OR numero LIKE '%(38)%'
+11, 12, 13, 14, 15, 16, 17, 18, 19      São Paulo           SELECT * FROM whats WHERE numero LIKE '%(11)%' OR numero LIKE '%(12)%' OR numero LIKE '%(13)%' OR numero LIKE '%(14)%' OR numero LIKE '%(15)%' OR numero LIKE '%(16)%' OR numero LIKE '%(17)%' OR numero LIKE '%(18)%' OR numero LIKE '%(19)%'
+
+
+
+Host: teste_diversos.mysql.dbaas.com.br
+User: teste_diversos
+Pass: teste123@
+
+      
+                            
