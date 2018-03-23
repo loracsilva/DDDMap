@@ -1,30 +1,31 @@
 
-84          Rio grande do Norte         SELECT * FROM whats WHERE numero LIKE '%(84)%'
-83          Paraiba                     SELECT * FROM whats WHERE numero LIKE '%(83)%'
-82          Alagoas                     SELECT * FROM whats WHERE numero LIKE '%(82)%'
-79          Sergipe                     SELECT * FROM whats WHERE numero LIKE '%(79)%'
-63          Tocantins                   SELECT * FROM whats WHERE numero LIKE '%(63)%'
-96          Amapá                       SELECT * FROM whats WHERE numero LIKE '%(96)%'
-95          Roraima                     SELECT * FROM whats WHERE numero LIKE '%(95)%'
-68          Acre                        SELECT * FROM whats WHERE numero LIKE '%(68)%'
-69          Rondônia                    SELECT * FROM whats WHERE numero LIKE '%(69)%'
-67          Mato Grosso do Sul          SELECT * FROM whats WHERE numero LIKE '%(67)%'
-81, 87      Pernanbuco                  SELECT * FROM whats WHERE numero LIKE '%(81)%' OR numero LIKE '%(87)%'
-86, 89      Piaui                       SELECT * FROM whats WHERE numero LIKE '%(86)%' OR numero LIKE '%(89)%'
-85, 88      Ceara                       SELECT * FROM whats WHERE numero LIKE '%(85)%' OR numero LIKE '%(88)%'
-92, 97      Amazonas                    SELECT * FROM whats WHERE numero LIKE '%(92)%' OR numero LIKE '%(97)%'
-27, 28      Espirito Santo              SELECT * FROM whats WHERE numero LIKE '%(27)%' OR numero LIKE '%(28)%'
-65, 66      Mato Grosso                 SELECT * FROM whats WHERE numero LIKE '%(65)%' OR numero LIKE '%(67)%'
-98, 99      Maranhão                    SELECT * FROM whats WHERE numero LIKE '%(98)%' OR numero LIKE '%(99)%'
-91, 93, 94  Pará                        SELECT * FROM whats WHERE numero LIKE '%(91)%' OR numero LIKE '%(93)%' OR numero LIKE '%(94)%'
-21, 22, 24  Rio de Janeiro              SELECT * FROM whats WHERE numero LIKE '%(21)%' OR numero LIKE '%(22)%' OR numero LIKE '%(24)%'
-47, 48, 49  Santa Catarina              SELECT * FROM whats WHERE numero LIKE '%(47)%' OR numero LIKE '%(48)%' OR numero LIKE '%(49)%'
-61, 62, 64  DF,Goias                    SELECT * FROM whats WHERE numero LIKE '%(61)%' OR numero LIKE '%(62)%' OR numero LIKE '%(64)%'
-51, 53, 54, 55                          Rio Grande do Sul   SELECT * FROM whats WHERE numero LIKE '%(51)%' OR numero LIKE '%(53)%' OR numero LIKE '%(54)%' OR numero LIKE '%(55)%'
-71, 73, 74, 75, 77                      Bahia               SELECT * FROM whats WHERE numero LIKE '%(71)%' OR numero LIKE '%(73)%' OR numero LIKE '%(74)%' OR numero LIKE '%(75)%' OR numero LIKE '%(77)%'
-41, 42, 43, 44, 45, 46                  Paraná              SELECT * FROM whats WHERE numero LIKE '%(41)%' OR numero LIKE '%(42)%' OR numero LIKE '%(43)%' OR numero LIKE '%(44)%' OR numero LIKE '%(45)%' OR numero LIKE '%(46)%'
-31, 32, 33, 34, 35, 37, 38              Minas Gerais        SELECT * FROM whats WHERE numero LIKE '%(31)%' OR numero LIKE '%(32)%' OR numero LIKE '%(33)%' OR numero LIKE '%(34)%' OR numero LIKE '%(35)%' OR numero LIKE '%(37)%' OR numero LIKE '%(38)%'
-11, 12, 13, 14, 15, 16, 17, 18, 19      São Paulo           SELECT * FROM whats WHERE numero LIKE '%(11)%' OR numero LIKE '%(12)%' OR numero LIKE '%(13)%' OR numero LIKE '%(14)%' OR numero LIKE '%(15)%' OR numero LIKE '%(16)%' OR numero LIKE '%(17)%' OR numero LIKE '%(18)%' OR numero LIKE '%(19)%'
+state_rn    84          Rio grande do Norte         SELECT * FROM whats WHERE numero LIKE '%(84)%'
+state_pb    83          Paraiba                     SELECT * FROM whats WHERE numero LIKE '%(83)%'
+state_al    82          Alagoas                     SELECT * FROM whats WHERE numero LIKE '%(82)%'
+state_se    79          Sergipe                     SELECT * FROM whats WHERE numero LIKE '%(79)%'
+state_to    63          Tocantins                   SELECT * FROM whats WHERE numero LIKE '%(63)%'
+state_ap    96          Amapá                       SELECT * FROM whats WHERE numero LIKE '%(96)%'
+state_rr    95          Roraima                     SELECT * FROM whats WHERE numero LIKE '%(95)%'
+state_ac    68          Acre                        SELECT * FROM whats WHERE numero LIKE '%(68)%'
+state_ro    69          Rondônia                    SELECT * FROM whats WHERE numero LIKE '%(69)%'
+state_ms    67          Mato Grosso do Sul          SELECT * FROM whats WHERE numero LIKE '%(67)%'
+state_pe    81, 87      Pernanbuco                  SELECT * FROM whats WHERE numero LIKE '%(81)%' OR numero LIKE '%(87)%'
+state_pi    86, 89      Piaui                       SELECT * FROM whats WHERE numero LIKE '%(86)%' OR numero LIKE '%(89)%'
+state_ce    85, 88      Ceara                       SELECT * FROM whats WHERE numero LIKE '%(85)%' OR numero LIKE '%(88)%'
+state_am    92, 97      Amazonas                    SELECT * FROM whats WHERE numero LIKE '%(92)%' OR numero LIKE '%(97)%'
+state_es    27, 28      Espirito Santo              SELECT * FROM whats WHERE numero LIKE '%(27)%' OR numero LIKE '%(28)%'
+state_mt    65, 66      Mato Grosso                 SELECT * FROM whats WHERE numero LIKE '%(65)%' OR numero LIKE '%(67)%'
+state_ma    98, 99      Maranhão                    SELECT * FROM whats WHERE numero LIKE '%(98)%' OR numero LIKE '%(99)%'
+state_pa    91, 93, 94  Pará                        SELECT * FROM whats WHERE numero LIKE '%(91)%' OR numero LIKE '%(93)%' OR numero LIKE '%(94)%'
+state_rj    21, 22, 24  Rio de Janeiro              SELECT * FROM whats WHERE numero LIKE '%(21)%' OR numero LIKE '%(22)%' OR numero LIKE '%(24)%'
+state_sc    47, 48, 49  Santa Catarina              SELECT * FROM whats WHERE numero LIKE '%(47)%' OR numero LIKE '%(48)%' OR numero LIKE '%(49)%'
+state_df    61          DF                          SELECT * FROM whats WHERE numero LIKE '%(61)%'
+state_go    62, 64      Goias                       SELECT * FROM whats WHERE numero LIKE '%(62)%' OR numero LIKE '%(64)%'
+state_rs    51, 53, 54, 55                          Rio Grande do Sul   SELECT * FROM whats WHERE numero LIKE '%(51)%' OR numero LIKE '%(53)%' OR numero LIKE '%(54)%' OR numero LIKE '%(55)%'
+state_ba    71, 73, 74, 75, 77                      Bahia               SELECT * FROM whats WHERE numero LIKE '%(71)%' OR numero LIKE '%(73)%' OR numero LIKE '%(74)%' OR numero LIKE '%(75)%' OR numero LIKE '%(77)%'
+state_pr    41, 42, 43, 44, 45, 46                  Paraná              SELECT * FROM whats WHERE numero LIKE '%(41)%' OR numero LIKE '%(42)%' OR numero LIKE '%(43)%' OR numero LIKE '%(44)%' OR numero LIKE '%(45)%' OR numero LIKE '%(46)%'
+state_mg    31, 32, 33, 34, 35, 37, 38              Minas Gerais        SELECT * FROM whats WHERE numero LIKE '%(31)%' OR numero LIKE '%(32)%' OR numero LIKE '%(33)%' OR numero LIKE '%(34)%' OR numero LIKE '%(35)%' OR numero LIKE '%(37)%' OR numero LIKE '%(38)%'
+state_sp    11, 12, 13, 14, 15, 16, 17, 18, 19      São Paulo           SELECT * FROM whats WHERE numero LIKE '%(11)%' OR numero LIKE '%(12)%' OR numero LIKE '%(13)%' OR numero LIKE '%(14)%' OR numero LIKE '%(15)%' OR numero LIKE '%(16)%' OR numero LIKE '%(17)%' OR numero LIKE '%(18)%' OR numero LIKE '%(19)%'
 
 
 
@@ -33,4 +34,140 @@ User: teste_diversos
 Pass: teste123@
 
       
-                            
+querys
+
+if($valor == 'state_rn') {   
+ //84
+ //Rio grande do Norte         
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(84)%'";
+}
+if($valor == 'state_pb') {   
+ //83
+ //Paraiba                     
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(83)%'";
+}
+if($valor == 'state_al') {   
+ //82
+ //Alagoas                     
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(82)%'";
+}
+if($valor == 'state_se') {   
+ //79
+ //Sergipe                     
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(79)%'";
+}
+if($valor == 'state_to') {   
+ //63
+ //Tocantins                   
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(63)%'";
+}
+if($valor == 'state_ap') {   
+ //96
+ //Amapá                       
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(96)%'";
+}
+if($valor == 'state_rr') {   
+ //95
+ //Roraima                     
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(95)%'";
+}
+if($valor == 'state_ac') {   
+ //68
+ //Acre                        
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(68)%'";
+}
+if($valor == 'state_ro') {   
+ //69
+ //Rondônia                    
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(69)%'";
+}
+if($valor == 'state_ms') {   
+ //67
+ //Mato Grosso do Sul          
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(67)%'";
+}
+if($valor == 'state_pe') {   
+ //81
+ //Pernanbuco                  
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(81)%' OR numero LIKE '%(87)%'";
+}
+if($valor == 'state_pi') {   
+ //86
+ //Piaui                       
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(86)%' OR numero LIKE '%(89)%'";
+}
+if($valor == 'state_ce') {   
+ //85
+ //Ceara                       
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(85)%' OR numero LIKE '%(88)%'";
+}
+if($valor == 'state_am') {   
+ //92
+ //Amazonas                    
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(92)%' OR numero LIKE '%(97)%'";
+}
+if($valor == 'state_es') {   
+ //27
+ //Espirito Santo              
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(27)%' OR numero LIKE '%(28)%'";
+}
+if($valor == 'state_mt') {   
+ //65
+ //Mato Grosso                 
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(65)%' OR numero LIKE '%(67)%'";
+}
+if($valor == 'state_ma') {   
+ //98
+ //Maranhão                    
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(98)%' OR numero LIKE '%(99)%'";
+}
+if($valor == 'state_pa') {   
+ //91
+ //Pará                        
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(91)%' OR numero LIKE '%(93)%' OR numero LIKE '%(94)%'";
+}
+if($valor == 'state_rj') {   
+ //21
+ //Rio de Janeiro              
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(21)%' OR numero LIKE '%(22)%' OR numero LIKE '%(24)%'";
+}
+if($valor == 'state_sc') {   
+ //47
+ //Santa Catarina              
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(47)%' OR numero LIKE '%(48)%' OR numero LIKE '%(49)%'";
+}
+if($valor == 'state_df') {   
+ //61
+ //DF                          
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(61)%'";
+}
+if($valor == 'state_go') {   
+ //62
+ //Goias                       
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(62)%' OR numero LIKE '%(64)%'";
+}
+if($valor == 'state_rs') {   
+ //51
+ //55                          Rio Grande do Sul   
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(51)%' OR numero LIKE '%(53)%' OR numero LIKE '%(54)%' OR numero LIKE '%(55)%'";
+}
+if($valor == 'state_ba') {   
+ //71
+ //75, 77                      Bahia               
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(71)%' OR numero LIKE '%(73)%' OR numero LIKE '%(74)%' OR numero LIKE '%(75)%' OR numero LIKE '%(77)%'";
+}
+if($valor == 'state_pr') {   
+ //41
+ //44, 45, 46                  Paraná              
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(41)%' OR numero LIKE '%(42)%' OR numero LIKE '%(43)%' OR numero LIKE '%(44)%' OR numero LIKE '%(45)%' OR numero LIKE '%(46)%'";
+}
+if($valor == 'state_mg') {   
+ //31
+ //34, 35, 37, 38              Minas Gerais        
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(31)%' OR numero LIKE '%(32)%' OR numero LIKE '%(33)%' OR numero LIKE '%(34)%' OR numero LIKE '%(35)%' OR numero LIKE '%(37)%' OR numero LIKE '%(38)%'";
+}
+if($valor == 'state_sp') {   
+ //11
+ //14, 15, 16, 17, 18, 19      São Paulo           
+ $query = "SELECT * FROM whats WHERE numero LIKE '%(11)%' OR numero LIKE '%(12)%' OR numero LIKE '%(13)%' OR numero LIKE '%(14)%' OR numero LIKE '%(15)%' OR numero LIKE '%(16)%' OR numero LIKE '%(17)%' OR numero LIKE '%(18)%' OR numero LIKE '%(19)%'";
+}
