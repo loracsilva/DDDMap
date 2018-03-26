@@ -1,10 +1,10 @@
 <?php
 error_reporting(E_ALL ^ E_DEPRECATED);
 
-    $host = "teste_diversos.mysql.dbaas.com.br:3306";
-    $usuario = "teste_diversos";
-    $senha = "teste123@";
-    $banco = "teste_diversos";
+    $host = "#";
+    $usuario = "#";
+    $senha = "#";
+    $banco = "#";
    
  
     $conn = mysql_connect($host, $usuario, $senha)or die('Erro: ' . mysql_error());; 
