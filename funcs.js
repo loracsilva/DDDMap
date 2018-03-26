@@ -7,11 +7,9 @@ function initPage() {
 	if(result==""){
 		buscarNumeros('total');
 	}
-	
 	$(".state").mouseover(function () {
 		buscarNumeros(this.id);
 	});
-
 	$(".state").mouseout(function () {
 		buscarNumeros('total');
 	});
