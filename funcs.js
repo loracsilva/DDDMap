@@ -5,15 +5,26 @@ function initPage() {
 	var result = document.getElementById('resultado').textContent;
 	
 	if(result==""){
-		buscarNumeros('total');
+		buscaTotal();
 	}
-	$(".state").mouseover(function () {
-		buscarNumeros(this.id);
+	$(".map").mouseover(function(){
+		buscandoId();
 	});
-	$(".state").mouseout(function () {
-		buscarNumeros('total');
+	 $(".map").mouseout(function () {
+		buscaTotal();
 	});
 
+}
+
+function buscandoId(){
+	$(".state").mouseover(function () {
+		console.log(this.id);
+		buscarNumeros(this.id);
+	});
+}
+
+function buscaTotal(){
+	buscarNumeros('total');
 }
 
 // FUNÇÃO PARA BUSCA

@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL ^ E_DEPRECATED);
     //configurações de banco
-    $host = "#:3306";
+    $host = "#";
     $usuario = "#";
     $senha = "#";
     $banco = "#";
