@@ -1,8 +1,17 @@
 var req;
- 
+window.onload = initPage;
+
+function initPage() {
+	$('.state').mouseover(
+		function () {
+			buscarNumeros(this.id);
+		}
+	);
+}
+
 // FUNÇÃO PARA BUSCA
 function buscarNumeros(valor) {
- 
+
 // Verificando Browser
 if(window.XMLHttpRequest) {
    req = new XMLHttpRequest();
@@ -22,70 +31,27 @@ req.onreadystatechange = function() {
  
 	// Exibe a mensagem "Buscando..." enquanto carrega
 	if(req.readyState == 1) {
-		document.getElementById('resultado').innerHTML = 'Buscando Numeros...';
+		document.getElementById('resultado').innerHTML = 'Buscando...';
 	}
+	
  
 	// Verifica se o Ajax realizou todas as operações corretamente
 	if(req.readyState == 4 && req.status == 200) {
  
 	// Resposta retornada pelo busca.php
 	var resposta = req.responseText;
+	var estado = document.getElementById('label_' + valor).textContent;
+	var texto1 = estado + ' - ' + resposta + ' cliente(s)';
+	var texto2 = estado;
+
+	if (resposta == 0) {
+		document.getElementById('resultado').innerHTML = texto2;
+	}else{
+		document.getElementById('resultado').innerHTML = texto1;
+	}
  
-	// Abaixo colocamos a(s) resposta(s) na div resultado
-	document.getElementById('resultado').innerHTML = resposta;
 	}
 }
 req.send(null);
 }
 
-
-// FUNÇÃO PARA EXIBIR
-function exibirConteudo(id) {
- 
-// Verificando Browser
-if(window.XMLHttpRequest) {
-   req = new XMLHttpRequest();
-}
-else if(window.ActiveXObject) {
-   req = new ActiveXObject("Microsoft.XMLHTTP");
-}
- 
-// Arquivo PHP juntamento com a id da noticia (método GET)
-var url = "exibir.php?id="+id;
- 
-// Chamada do método open para processar a requisição
-req.open("Get", url, true); 
- 
-// Quando o objeto recebe o retorno, chamamos a seguinte função;
-req.onreadystatechange = function() {
- 
-	// Exibe a mensagem "Aguarde..." enquanto carrega
-	if(req.readyState == 1) {
-		document.getElementById('conteudo').innerHTML = 'Aguarde...';
-	}
- 
-	// Verifica se o Ajax realizou todas as operações corretamente
-	if(req.readyState == 4 && req.status == 200) {
- 
-	// Resposta retornada pelo exibir.php
-	var resposta = req.responseText;
- 
-	// Abaixo colocamos a resposta na div conteudo
-	document.getElementById('conteudo').innerHTML = resposta;
-	}
-}
-req.send(null);
-}
-
-
-function highlight_map_states() {
-	if ($(".states_section").length > 0) {
-		$(".states_section .list_states .item .link").hover(function () {
-			var a = "#state_" + $(this).text().toLowerCase();
-			$(a).attr("class", "state hover");
-		}, function () {
-			var a = "#state_" + $(this).text().toLowerCase();
-			$(a).attr("class", "state");
-		});
-	}
-}

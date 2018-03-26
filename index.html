@@ -3,11 +3,16 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Consulta interativa com Mapa</title>
         <script type="text/javascript" src="funcs.js"></script>
+        <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
         <style>
-            #map { display: none; } #map .state { cursor: pointer; } #map .state .shape { cursor: pointer; -width: 0; } #map .state
-            .label_icon_state { fill: #fff; font-family: Arial; font-size: 11px; line-height: 12px; font-weight: normal; } #map .state
-            .label_state { display: none; font-family: Arial; font-size: 14px; line-height: 16px; font-weight: bold; } #map .state:hover
-            .label_state, #map .state.hover .label_state { display: block; } #map .model-green .state .shape { fill: #6cb361; } #map
+            body { background-color: #FFF; font-family: Calibri, Verdana, Arial; font-size: 16px; }
+            #resultado{ float: right; margin-right: 60%; margin-top: 20px; }
+            #map { display: none; } 
+            #map .state { cursor: pointer; } 
+            #map .state .shape { cursor: pointer; -width: 0; } 
+            #map .state .label_icon_state { fill: #fff; font-family: Arial; font-size: 11px; line-height: 12px; font-weight: normal; } 
+            #map .state .label_state { display: none; font-family: Arial; font-size: 14px; line-height: 16px; font-weight: bold; } 
+            #map .state:hover .label_state, #map .state.hover .label_state { display: none; } #map .model-green .state .shape { fill: #6cb361; } #map
             .model-green .state .icon_state { fill: #10592f; } #map .model-green .state .label_icon_state { fill: #fff; } #map .model-green
             .state .label_state { fill: #666; } #map .model-green .state:hover .shape, #map .model-green .state.hover .shape { fill:
             #2d68b2; } #map .model-green .state:hover .icon_state, #map .model-green .state.hover .icon_state { fill: #5a95ce; } #map
@@ -23,14 +28,11 @@
     </head>
     
     <body>
-        <h1>Consulta interativa com Mapa</h1>
-        <br />
-<input type="text" id="busca" onkeyup="buscarNumeros(this.value)" />
+
         <div id="resultado"></div>
-        <br /><br />
-        <div id="conteudo"></div>
+
         <div class="map">
-            <svg id="map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="460" height="465" style="display: inline;">
+            <svg id="map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="650" style="display: inline;">
 
                 <g class="model-green">
 
@@ -180,7 +182,7 @@
                         <text id="label_state_pi" class="label_state" x="424" y="15">Piauí</text>
                     </a>
 
-                    <a id="state_ce" class="state" xlink:href="">
+                    <a id="state_ce" class="state"  xlink:href="">
                         <desc id="description_ce">Ceará</desc>
                         <path id="shape_ce" class="shape" d="m 410.49252,153.37689 c -1.37326,-4.50502 1.41792,-7.68879 2.30887,-11.49361 0.52772,-2.25364 -1.24337,-4.03731 1.79716,-6.70722 2.33781,-2.05285 3.28256,-3.28881 4.83648,-5.01463 1.23678,-1.37361 2.3792,-2.82933 3.5669,-4.24558 0.62388,-0.74392 2.94231,-1.62112 1.86963,-2.23341 -12.56793,-7.17383 -9.21188,-15.43258 -25.23955,-22.07066 -4.4412,-1.839383 -10.07521,-2.223242 -14.32531,-1.659474 -0.6422,0.595794 -3.97137,-1.822914 -4.03961,-0.632221 -0.32937,5.746695 3.30353,9.618705 4.03221,14.621765 0.79541,5.46128 -0.76186,11.14433 0.33409,16.55331 0.83879,4.13983 0.7925,10.45934 4.696,11.76959 5.40645,1.81473 -0.78433,9.77211 0.76432,10.6075 3.65369,0.53702 5.60978,-2.21188 8.60496,-1.40223 2.48506,0.67176 5.50605,4.68994 8.40771,4.32035 1.12222,-0.14294 2.71599,-1.33134 2.38612,-2.41348 z"></path>
                         <text id="label_icon_state_ce" class="label_icon_state" x="395" y="126">CE</text>
