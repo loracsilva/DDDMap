@@ -10,7 +10,9 @@ Tecnologias Usadas:
 Para usar basta preencher os dados citados abaixo no arquivo connect.php:
  --configurações de banco
  $host = "#:3306";
+ 
  $usuario = "#";
+ 
  $senha = "#";
  $banco = "#";
     
