@@ -2,10 +2,10 @@
 // Incluir aquivo de conexão
 include("conect.php");
 
-$tabela_telefone = "whats";
-$nome_coluna_telefone = "numero";
-$tabela_cliente = "user_cli";
-$nome_cliente = "User Teste";
+$tabela_telefone = "#";
+$nome_coluna_telefone = "#";
+$tabela_cliente = "#";
+$nome_cliente = "#";
 
 // Recebe o valor enviado
 $valor = $_GET['valor'];
