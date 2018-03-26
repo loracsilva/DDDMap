@@ -2,15 +2,26 @@ var req;
 window.onload = initPage;
 
 function initPage() {
-	$('.state').mouseover(
-		function () {
-			buscarNumeros(this.id);
-		}
-	);
+	var result = document.getElementById('resultado').textContent;
+	
+	if(result==""){
+		buscarNumeros('total');
+	}
+	
+	$(".state").mouseover(function () {
+		buscarNumeros(this.id);
+	});
+
+	$(".state").mouseout(function () {
+		buscarNumeros('total');
+	});
+
 }
 
 // FUNÇÃO PARA BUSCA
 function buscarNumeros(valor) {
+
+//console.log(valor);
 
 // Verificando Browser
 if(window.XMLHttpRequest) {
@@ -40,15 +51,22 @@ req.onreadystatechange = function() {
  
 	// Resposta retornada pelo busca.php
 	var resposta = req.responseText;
-	var estado = document.getElementById('label_' + valor).textContent;
-	var texto1 = estado + ' - ' + resposta + ' cliente(s)';
-	var texto2 = estado;
+	var texto3 = 'Temos ' + resposta + ' clientes em todo Brasil.';
 
-	if (resposta == 0) {
-		document.getElementById('resultado').innerHTML = texto2;
+	if(valor == 'total'){
+		document.getElementById('resultado').innerHTML = texto3;
 	}else{
-		document.getElementById('resultado').innerHTML = texto1;
+		var estado = document.getElementById('label_' + valor).textContent;
+		var texto1 = estado + ' - ' + resposta + ' cliente(s)';
+		var texto2 = estado;
+		
+		if (resposta == 0) {
+			document.getElementById('resultado').innerHTML = texto2;
+		} else {
+			document.getElementById('resultado').innerHTML = texto1;
+		}
 	}
+		
  
 	}
 }

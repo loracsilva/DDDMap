@@ -5,7 +5,7 @@ error_reporting(E_ALL ^ E_DEPRECATED);
     $usuario = "teste_diversos";
     $senha = "teste123@";
     $banco = "teste_diversos";
-    
+   
  
     $conn = mysql_connect($host, $usuario, $senha)or die('Erro: ' . mysql_error());; 
     $db = mysql_select_db($banco,$conn)or die('Erro: ' . mysql_error());;
