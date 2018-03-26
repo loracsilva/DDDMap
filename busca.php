@@ -8,7 +8,7 @@ $valor = $_GET['valor'];
 
 //total de clientes
 if($valor == 'total'){
-	 $query = "SELECT * FROM ". $tabela_telefone ." WHERE ".$nome_coluna_cliente." = '".$nome_cliente."' ";
+  $query = "SELECT * FROM ". $tabela_telefone ." WHERE ".$nome_coluna_cliente." = '".$nome_cliente."' ";
 }
 
 //estados e dds
@@ -154,7 +154,7 @@ if($valor == 'state_sp') {
 //print_r($sql);
 $count = 0;
 while ($numero = mysql_fetch_object($sql)) {
-	$count++;
+ $count++;
 }
 echo $count;
 
