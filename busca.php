@@ -4,7 +4,6 @@ include("conect.php");
 
 // Recebe o valor enviado
 $valor = $_GET['valor'];
-//echo $valor;
 
 //total de clientes
 if($valor == 'total'){
@@ -151,7 +150,6 @@ if($valor == 'state_sp') {
  $sql = mysql_query($query)or die('Erro: ' . mysql_error());
  
 // Exibe todos os valores encontrados
-//print_r($sql);
 $count = 0;
 while ($numero = mysql_fetch_object($sql)) {
  $count++;
