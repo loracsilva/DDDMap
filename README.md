@@ -1,7 +1,6 @@
 # DDDMap
 
-Mapa dos DDD's dos estados Brasileiros faz a busca com o passar do mouse a quantidade de "pessoas" em cada estado, 
-por meio do DDD dos telefones cadastrados, fazendo uma consulta ao banco de dados MySql configurado.
+Mapa dos DDD's dos estados Brasileiros que faz a busca com o passar do mouse(hover) e mostra a quantidade de "pessoas" em cada estado usando o DDD dos telefones cadastrados no banco de dados configurado.
 
 ### Tecnologias Utilizadas: ###
   - **Php** 
@@ -23,5 +22,6 @@ por meio do DDD dos telefones cadastrados, fazendo uma consulta ao banco de dado
  
  
 ![buscamapavisãototal](https://github.com/loracsilva/DDDMap/blob/master/img2.png)
-
 ![buscamapa](https://github.com/loracsilva/DDDMap/blob/master/img1.png)
+
+#hacktoberfast
